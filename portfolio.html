@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shruti Patil — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7c5cff;--glass: rgba(255,255,255,0.04);--radius:14px;--maxw:1100px;--gap:20px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui;background:linear-gradient(180deg,#071029 0%, var(--bg) 60%);color:#e6eef8;line-height:1.45;padding:40px 20px;display:flex;justify-content:center;}
+    .container{width:100%;max-width:var(--maxw);}
+    header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:28px;}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;}
+    .logo{background:linear-gradient(135deg,var(--accent),#4fb6ff);width:48px;height:48px;border-radius:12px;display:grid;place-items:center;font-weight:800;color:#081028}
+    nav ul{display:flex;gap:12px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:10px;font-weight:600}
+    nav a.primary{background:linear-gradient(90deg,rgba(124,92,255,0.12),rgba(79,182,255,0.06));color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;margin-bottom:28px;}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:26px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(2,6,23,0.6);}
+    .intro h1{font-size:28px;margin:0 0 6px}
+    .intro p.lead{color:var(--muted);margin:0 0 16px}
+    .cta{display:flex;gap:12px}
+    .btn{border:0;padding:10px 14px;border-radius:12px;font-weight:700;cursor:pointer}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#4fb6ff);color:#041022;text-decoration:none}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)}
+    .profile-card{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+    .avatar{width:160px;height:160px;border-radius:22px;overflow:hidden;border:4px solid rgba(255,255,255,0.04);display:grid;place-items:center;background:linear-gradient(180deg,#0a0f1a,#071024)}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    section{margin-bottom:22px}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .project{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.02)}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{font-size:12px;padding:6px 8px;border-radius:999px;background:var(--glass);color:var(--muted)}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:10px;border-radius:10px;color:inherit}
+    textarea{grid-column:1/-1;min-height:120px}
+    footer{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:14px;padding-top:12px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.projects{grid-template-columns:1fr}form{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="#"><div class="logo">SP</div><div><div style="font-weight:700">Shruti Patil</div><div style="font-size:12px;color:var(--muted)">Full Stack Developer</div></div></a>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a class="primary" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="card intro">
+        <p style="margin:0;color:var(--muted);font-weight:600">Hello 👋 I'm</p>
+        <h1>Ms.Shruti Patil</h1>
+        <p class="lead">I am a B.Sc. Computer Science student with a strong passion for web development and modern technologies. I enjoy building responsive, user-friendly websites and learning new tools to improve my skills. Eager to apply my academic knowledge to real-world projects, I’m looking for opportunities to grow as a full stack developer while contributing creative and efficient solutions to web-based challenges.</p>
+        <div class="cta">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="resume/Shruti_Patil_Resume.pdf" class="btn btn-ghost" download>Download Resume</a>
+        </div>
+        <div style="margin-top:18px;display:flex;gap:10px;align-items:center">
+          <div style="font-weight:700">Experience</div>
+          <div style="color:var(--muted);">Internship</div>
+        </div>
+      </div>
+      <aside class="card profile-card">
+        <div class="avatar"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" alt="avatar"></div>
+        <h3>Shruti Patil</h3>
+        <small>Frontend Developer/Full Stack Developer</small>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <a href="https://github.com/" title="GitHub" style="text-decoration:none;color:var(--muted);font-weight:700">GitHub</a>
+          <a href="https://linkedin.com/in/" title="LinkedIn" style="text-decoration:none;color:var(--muted);font-weight:700">LinkedIn</a>
+          <a href="mailto:shruti.patil@example.com" title="Email" style="text-decoration:none;color:var(--muted);font-weight:700">Email</a>
+        </div>
+      </aside>
+    </main>
+
+    <section id="about" class="card">
+      <h2>About me</h2>
+      <p style="color:var(--muted)">I am a Computer Science student passionate about web development and coding creative, user-friendly websites.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <h4>Portfolio Website</h4>
+          <p style="color:var(--muted)">A responsive personal website made using HTML and CSS.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+        </article>
+        <article class="project">
+          <h4>Task Manager App</h4>
+          <p style="color:var(--muted)">Frontend App</p>
+          <div class="tags"><span class="tag">HTML,CSS</span><span class="tag">Node.js</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p style="color:var(--muted)">Email me directly at <a href="mailto:shruti.patil@example.com" style="color:var(--accent)">shruti.patil123@example.com</a> or fill out the form below.</p>
+      <form onsubmit="alert('Demo form. Connect with a backend or email service.');return false;">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Your email" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit" class="btn btn-primary" style="grid-column:1/-1;">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <div>© <strong>Shruti Patil</strong> — 2025</div>
+      <div>Built with ❤️ using HTML & CSS</div>
+    </footer>
+  </div>
+</body>
+</html>
